@@ -14,7 +14,7 @@ def chatbot(prompt):
 
 # Streamlit app starts here
 def main():
-    st.title("GPT Chatbot - Billing")
+    st.title("GPT Chatbot - Mavenir Billing Team")
     st.write("Enter your question below:")
 
     # Input atext box for user
