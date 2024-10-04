@@ -24,11 +24,17 @@ def main():
     # Button to send input to chatbot
     if st.button("Submit"):
         if user_input:
-            # Call the chatbot function
-            response = chatbot(user_input)
-            st.write(f"Chatbot: {response}")
+            with st.spinner('Generating...'):
+                try:
+                    # Call the chatbot function
+                    response = chatbot(user_input)
+                    st.write(f"Chatbot: {response}")
+                except Exception as e:
+                    st.error('An error occurred while generating test cases / code etc.')
+                    st.error(e)
         else:
-            st.write("Please enter a message.")
+            st.write('Please enter a requirement to generate test cases / code etc.')
+    st.write('Note* Kindly review these test cases and add/update based on your project specific requirements in detail.')
 
 # Set up your OpenAI API key
 openai.api_key = st.secrets["openai_api_key"]
