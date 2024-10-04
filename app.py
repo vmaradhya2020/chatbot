@@ -19,7 +19,7 @@ def main():
     st.write('Enter your software requirement(s) to generate test cases / code etc.')
 
     # Input a text box for user
-    user_input = st.text_area("How can I assist you today? ", height=150)
+    user_input = st.text_area("", height=150)
 
     # Button to send input to chatbot
     if st.button("Submit"):
