@@ -14,7 +14,7 @@ def chatbot(prompt):
 
 # Streamlit app starts here
 def main():
-    st.title("GPT Chatbot - Billing Team")
+    st.title("AI Powered Chatbot - Billing Team")
     st.subheader("Have fun using this...")
     st.write('Enter your software requirement(s) to generate test cases / code etc.')
 
