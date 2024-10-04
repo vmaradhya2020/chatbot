@@ -15,9 +15,10 @@ def chatbot(prompt):
 # Streamlit app starts here
 def main():
     st.title("GPT Chatbot - Billing Team")
-    st.write("Enter your question below:")
+    st.subheader("Have fun using this...")
+    st.write('Enter your software requirement(s) to generate test cases / code etc.')
 
-    # Input atext box for user
+    # Input a text box for user
     user_input = st.text_area("How can I assist you today? ", height=150)
 
     # Button to send input to chatbot
